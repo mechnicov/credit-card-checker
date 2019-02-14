@@ -1,5 +1,5 @@
 module CreditCardChecker
-  def self.check_type(card_number)
+  def self.identify_type(card_number)
     case card_number
     when /\A(34|37)\d{13}\z/ then 'AMEX'
     when /\A6011\d{12}\z/ then 'Discover'
