@@ -1,6 +1,21 @@
 ## Test task for Goody
 
-### Checking Credit Cards
+### Description
+
+This program, written in Ruby, is the solution to the test task for Goody.
+
+It identifies credit card type and checks validity in accordance with the the Luhn algorithm.
+
+
+### Launching
+
+To check credit card number use it as argument of program in terminal. For example:
+
+```
+ruby main.rb 4408041234567893
+```
+
+### Task
 
 Write a program that accepts a credit card number as a command-line argument. The program should print the card's type (or Unknown) as well a Valid/Invalid indication of whether or not the card passes the Luhn algorithm.
 Hint: use git, cover with specs, make some user friendly interface (can be a command line), make it modular.
