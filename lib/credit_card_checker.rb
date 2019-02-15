@@ -5,7 +5,8 @@ module CreditCardChecker
     when /\A6011\d{12}\z/ then 'Discover'
     when /\A5[1-5]\d{14}\z/ then 'MasterCard'
     when /\A4(\d{12}|\d{15})\z/ then 'Visa'
-    else 'unknown'
+    when /\A\d{10,19}\z/ then 'unknown'
+    else nil
     end
   end
 
